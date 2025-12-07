@@ -1,0 +1,152 @@
+/* As we discussed, I didn't do the float right for the second image because it looks better with 
+centred.*/
+
+:root {
+
+    --colourOne: #156082;
+    --colourTwo: #F27050;
+    --colorThree: #FFC636;
+    --colorHover: #fff;
+    }
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--colourOne);
+    border-top: solid var(--colourTwo);
+    border-bottom: solid var(--colourTwo);
+    margin-left: 0;
+    margin-right: 0;
+    inline-size: 100%;
+    min-width: 350px;
+    position: absolute;
+}
+
+header,
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-top: 0px;
+    padding: 5px;
+}
+
+
+.nav {
+    position: relative;
+    top: 18px;
+    left: -20px;
+}
+
+nav,
+ul,
+li {
+    text-align: left;
+    list-style-type: none;
+
+    a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: clamp(1em, 1vi+1.1em, 1.3em);
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: var(--colorHover);
+        text-decoration: underline;
+    }
+}
+
+li:nth-child(4) {
+    display: none;
+}
+
+p1 {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(1em, 1vi+1.1em, 1.3em);
+    color: #000000;
+    text-align: justify;
+    inline-size: 100%;
+    padding-top: 30px;
+
+
+}
+
+section {
+    border: 3px solid var(--colourTwo);
+    background-color: var(--colourOne);
+    box-shadow: 10px 10px 10px #828282;
+    padding: 20px;
+    margin: 20px;
+}
+
+h3,
+a {
+    color: var(--colorThree);
+    font-family: Arial, Helvetica, sans-serif
+}
+a:hover{
+    color: var(--colorHover);
+    text-decoration: underline;
+    }
+
+p2 {
+    color: var(--colorThree);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    background-color: var(--colourOne);
+    border-top: solid var(--colourTwo);
+    margin-left: 0;
+    margin-right: 0;
+    inline-size: 100%;
+    min-width: 350px;
+    overflow: auto;
+    padding: 10px;
+
+}
+
+.footer nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+a {
+    color: var(--colorThree);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(1em, 1vi+1.1em, 1.3em);
+    text-decoration: none;
+}
+
+a:hover{
+        color: var(--colorHover);
+        text-decoration: underline;
+    }
+
+address {
+    color: var(--colorThree);
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+footer,
+p3 {
+    color: var(--colorThree);
+    text-align: center;
+    padding-bottom: 5px;
+
+}
+
+footer,
+small {
+    color: var(--colorThree);
+
+
+}
+
