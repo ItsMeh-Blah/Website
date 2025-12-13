@@ -1,44 +1,160 @@
 <!DOCTYPE html>
-
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>Crochet Along</title>
-    <html lang="en"></html>
+    <title>Contact Us - Crochet Along</title>
     <link rel="stylesheet" href="./styles/site.css" type="text/css">
+    <link rel="stylesheet" href="./styles/contactus.css" type="text/css">
     <link rel="icon" href="./images/yarn-ball.ico">
-
-
 </head>
 
 <body>
 
     <header>
-        <image src="./images/logo.png" height="100px" width="200px">
+        <img class="logo" src="./images/logo.png" alt="Crochet Along Logo">
+         <div class="header">
+            <a href="">crochetalong.ca</a><br>
+            <a href="crochet_along@gmail.com">crochet_along@gmail.com</a>
+        </div>
     </header>
-    <nav class="nav">
-        <ul>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="tutorials.html">Tutorials</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
-        </ul>
-    </nav>
+
+    <div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <main>
+        <section>
+            <h2>Contact Us</h2>
+            <h3>Location</h3>
+            <p>If you would like to visit our location our address is:</p>
+            <p>325, boul. de la Cité-des-Jeunes<br>
+                Gatineau, QC<br>
+                J8Y6T3</p>
 
-        
-        
+            <p class="location">You can book your course with use by calling <a href="tel:8195555555">(819) 555-5555</a>. You can also
+                fill out the form and one of our helpful staff will contact with further details.</p>
+
+            <h3>Business Hours</h3>
+            <table>
+                <tr>
+                    <th>Day</th>
+                    <th>Open</th>
+                    <th>Closed</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>08:00 am</td>
+                    <td>08:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>08:00 am</td>
+                    <td>08:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>08:00 am</td>
+                    <td>08:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>08:00 am</td>
+                    <td>08:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>08:00 am</td>
+                    <td>08:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Satuday</td>
+                    <td>08:00 am</td>
+                    <td>08:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>Closed</td>
+                    <td>Closed</td>
+                </tr>
+            </table>
+
+        </section>
+        <section class=accentBorder>
+            <h3>Learn With Us!</h3>
+
+            <form action="learn.html" name="learn" id="learn" method="get">
+                <label for="fullName">Full Name</label>
+                <input type=text id="fullName" name="fullName" size="30" maxlength="30" placeholder="Jane Doe">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" size="50" maxlength="60" placeholder="jane.doe@email.com">
+                <label for="phone">Phone</label>
+                <input type="text" name="phone" id="phone" size=16 maxlength="16" placeholder="(837) 376-7232">
+
+                <label for="advertising">How did you hear about us?</label>
+                <select name="advertising" id="advertising">
+                    <option>--Select One--</option>
+                    <option value="friend">A Friend</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="radio">Radio</option>
+                    <option value="tiktok">TikTok</option>
+                    <option value="tv">Television</option>
+                    <option value="youtube">YouTube</option>
+                </select>
+
+                <fieldset>
+                    <legend>Choose your experience level</legend>
+
+                    <input type="radio" name="level" id="beginner]]]">
+                    <label for="beginner">Beginner</label><br>
+                    <input type="radio" name="level" id="intermediate">
+                    <label for="intermediate">intermediate</label><br>
+                    <input type="radio" name="level" id="advanced">
+                    <label for="advanced">Advanced</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Do you prefer Morning, Afternoon, or Evening Classes? (choose any that apply)</legend>
+                    <input type="checkbox" name="morning" id="morning">
+                    <label for="morning">Morning</label><br>
+                    <input type="checkbox" name="afternoon" id="afternoon">
+                    <label for="afternoon">Afternoon</label><br>
+                    <input type="checkbox" name="evening" id="evening">
+                    <label for="evening">Evening</label>
+                </fieldset>
+
+                <label for="feedback">Comments</label><br>
+                <textarea id="feedback" name="feedback" rows="4" cols="5"></textarea><br>
+
+                <div id="actions">
+                    <input type="submit" value="Book Now!">
+                    <input type="reset" value="Clear">
+                </div>
+            </form>
+
+        </section>
+
+
 
     </main>
+
     <footer class="footer">
         <nav>
-            <a href="aboutus.html">About Us</a>
-            <a href="tutorials.html">Tutorials</a>
-            <a href="shop.html">Shop</a>
-            <a href="resources.html">Resources</a>
-            <a href="contactus.html">Contact Us</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
         </nav>
         <address>
             <p>325, boul. de la Cité-des-Jeunes<br>
@@ -47,10 +163,10 @@
             <a href="tel:8195555555">(819) 555-5555</a><br>
         </address>
 
-        <p3>Yarn icons created by <a
+        <p>Yarn icons created by <a
                 href="https://www.flaticon.com/free-icon/yarn-ball_1650588?term=yarn&page=1&position=3&origin=search&related_id=1650588">Freepik
                 - Flaticon</a>
-        </p3>
+        </p>
 
         <small>Copyright &copy;2025, Crochet Along.</small>
     </footer>

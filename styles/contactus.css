@@ -1,0 +1,155 @@
+    form {
+        display: grid;
+        align-items: baseline;
+    }
+
+    h2 {
+        color: var(--colourOne)
+    }
+
+    p.location a {
+        color: var(--colourOne);
+        text-decoration: underline;
+    }
+
+    p.location a:hover{
+        color:var(--colourTwo);
+    }
+
+    input,
+    select {
+        block-size: 2em;
+        max-inline-size: fit-content;
+        font-size: 1rem;
+        border: 1px solid var(--colourOne);
+        accent-color: var(--colourOne);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    input:focus,
+    select:focus {
+        border: 3px solid var(--colourTwo);
+    }
+
+    input,
+    fieldset,
+    select {
+        border-radius: 7px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"],
+    input>label {
+        vertical-align: middle;
+    }
+
+    input [type="submit"] {
+        border: 3px solid var(--colourTwo);
+    }
+
+    input [type="reset"] {
+        margin-inline-start: 10px;
+    }
+
+    input:not([type="radio"], [type="checkbox"]),
+    fieldset,
+    select {
+        margin-block-end: 15px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 8px 4px;
+        margin-top: 10px;
+    }
+
+    table th,
+    table td {
+        border: 2px solid var(--colourTwo);
+        padding: 8px 12px;
+        text-align: left;
+    }
+
+    table th {
+        background-color: var(--colourOne);
+        color: var(--colourThree);
+    }
+
+    @media only screen and (min-width:768px) {
+
+        main {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 40px;
+
+        }
+
+        main>section:first-of-type {
+
+            flex: 0 0 35%;
+            margin-left: 60px;
+            max-width: 350px;
+        }
+
+        main>section.accentBorder {
+            border: 4px solid var(--colourTwo);
+            padding: 20px;
+            margin: 30px 0;
+            margin-left: 80px;
+            border-radius: 12px;
+            flex: 1;
+            max-width: 650px;
+            box-shadow:
+                0 0 10px var(--colourTwo),
+                0 0 20px var(--colourTwo),
+                0 0 30px var(--colourThree),
+                0 0 40px var(--colourThree);
+        }
+
+        #advertising,
+        label[for="advertising"] {
+            grid-column: 1/-1;
+            justify-self: center;
+            text-align: center;
+        }
+
+        form {
+            grid-template-columns: 130px 1fr;
+            row-gap: 15px;
+            column-gap: 5px;
+        }
+
+        label {
+            justify-self: end;
+        }
+
+        label:not(fieldset>label)::after {
+            content: ":";
+        }
+
+        label[for=feedback] {
+            grid-column: 1;
+            justify-self: end;
+            text-align: right;
+
+        }
+
+        #feedback {
+            grid-column: 2;
+            width: 100%;
+
+        }
+
+        fieldset,
+        #actions {
+            grid-column-start: 2;
+        }
+
+        input:not([type="radio"] [type="checkbox"]),
+        fieldset,
+        select {
+            margin-block-end: 0px;
+        }
+    }

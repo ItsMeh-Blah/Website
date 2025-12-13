@@ -1,0 +1,66 @@
+main p {
+    inline-size: 80%;
+    margin-inline-start: 10%;
+}
+
+main h1,
+main h2,
+main h3 {
+    inline-size: 80%;
+    margin-inline-start: 5%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 8px 4px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+table th,
+table td {
+    border: 2px solid var(--colourTwo);
+    padding: 8px 12px;
+    text-align: left;
+}
+
+main table th {
+    background-color: var(--colourOne);
+    color: var(--colourThree);
+    text-align: center;
+}
+
+table img {
+    width: auto;
+    height: auto;
+    object-fit: scale-down;
+}
+
+.desktop-table {
+    display: none;
+}
+
+.mobile-table {
+    display: table;
+}
+
+@media only screen and (min-width:768px) {
+
+    .center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    table {
+        width: 80%;
+    }
+
+    .desktop-table {
+        display: table;
+    }
+
+    .mobile-table {
+        display: none;
+    }
+}

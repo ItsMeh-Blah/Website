@@ -1,0 +1,30 @@
+.resources,
+main.resources h1 h2 h3 p ul li a {
+    inline-size: 80%;
+    margin-inline-start: 10%;
+}
+
+.resources-list,
+ul.resources-list {
+    list-style: none;
+    padding-left: 40px;
+    margin: 10px 0 20px 0;
+}
+
+.resources-list li,
+ul.resources-list li {
+    background-image: url(../images/yarn-ball.ico);
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    background-position: 0 5%;
+    padding-left: 30px;
+    margin-bottom: 12px;
+}
+
+ul.resources-list a {
+    color: var(--colourOne);
+}
+
+ul.resources-list a:hover {
+    color: var(--colourTwo);
+}

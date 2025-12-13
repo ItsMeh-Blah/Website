@@ -1,44 +1,56 @@
-/* As we discussed, I didn't do the float right for the second image because it looks better with 
-centred.*/
-
 :root {
 
     --colourOne: #156082;
     --colourTwo: #F27050;
-    --colorThree: #FFC636;
-    --colorHover: #fff;
-    }
+    --colourThree: #FFC636;
+    --colourHover: #fff;
+}
 
 * {
     box-sizing: border-box;
 }
 
 header {
-    background-color: var(--colourOne);
-    border-top: solid var(--colourTwo);
-    border-bottom: solid var(--colourTwo);
-    margin-left: 0;
-    margin-right: 0;
     inline-size: 100%;
-    min-width: 350px;
     position: absolute;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
+    background-color: var(--colourOne);
+    border-block-start: solid var(--colourTwo);
+    Border-block-end: solid var(--colourTwo);
+    box-sizing: border-box;
 }
 
-header,
-img {
+header img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0;
-    margin-top: 0px;
+    position: relative;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    margin-block-end: 0;
+    margin-block-start: 0px;
     padding: 5px;
 }
 
+img:first-child {
+    height: 100px;
+    width: 200px;
+}
+
+.header,
+div.header a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-style: italic;
+    color: var(--colourThree);
+    text-align: right;
+    padding: 3px;
+    text-decoration: none;
+}
 
 .nav {
     position: relative;
-    top: 18px;
-    left: -20px;
+    top: -2px;
+    left: 0px;
 }
 
 nav,
@@ -46,107 +58,93 @@ ul,
 li {
     text-align: left;
     list-style-type: none;
+    padding: 2px;
 
     a {
         font-family: Arial, Helvetica, sans-serif;
         font-size: clamp(1em, 1vi+1.1em, 1.3em);
+        color: var(--colourThree);
         text-decoration: none;
     }
 
-    a:hover{
-        color: var(--colorHover);
+    a:hover {
+        color: var(--colourHover);
         text-decoration: underline;
     }
 }
 
-li:nth-child(4) {
+div li:nth-child(4) {
     display: none;
 }
 
-p1 {
+main {
+    padding-top: 20px;
     display: block;
     font-family: Arial, Helvetica, sans-serif;
     font-size: clamp(1em, 1vi+1.1em, 1.3em);
-    color: #000000;
     text-align: justify;
     inline-size: 100%;
-    padding-top: 30px;
-
-
 }
 
-section {
-    border: 3px solid var(--colourTwo);
-    background-color: var(--colourOne);
-    box-shadow: 10px 10px 10px #828282;
-    padding: 20px;
-    margin: 20px;
-}
-
-h3,
-a {
-    color: var(--colorThree);
-    font-family: Arial, Helvetica, sans-serif
-}
-a:hover{
-    color: var(--colorHover);
-    text-decoration: underline;
-    }
-
-p2 {
-    color: var(--colorThree);
-    font-family: Arial, Helvetica, sans-serif;
+h1,
+h2,
+h3 {
+    color: var(--colourOne);
 }
 
 footer {
     background-color: var(--colourOne);
-    border-top: solid var(--colourTwo);
-    margin-left: 0;
-    margin-right: 0;
+    border-block-start: solid var(--colourTwo);
+    margin-inline-start: 0;
+    margin-inline-end: 0;
     inline-size: 100%;
     min-width: 350px;
     overflow: auto;
     padding: 10px;
-
 }
 
-.footer nav {
+.footer {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.footer nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-
-a {
-    color: var(--colorThree);
+.footer a {
+    color: var(--colourThree);
     font-family: Arial, Helvetica, sans-serif;
     font-size: clamp(1em, 1vi+1.1em, 1.3em);
     text-decoration: none;
 }
 
-a:hover{
-        color: var(--colorHover);
-        text-decoration: underline;
-    }
+.footer a:hover {
+    color: var(--colourHover);
+    text-decoration: underline;
+}
 
-address {
-    color: var(--colorThree);
+.footer address {
     text-align: center;
-    padding-bottom: 5px;
 }
 
-footer,
-p3 {
-    color: var(--colorThree);
+.footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(1em, 1vi+1.1em, 1.3em);
+    color: var(--colourThree);
+    margin: 5px 0;
+    padding: 2px 0;
     text-align: center;
-    padding-bottom: 5px;
-
 }
 
-footer,
-small {
-    color: var(--colorThree);
-
-
+.footer small {
+    color: var(--colourThree);
 }
 
+@media (min-width: 768px) {
+div li:nth-child(4) {
+    display: inline;
+}
+}
