@@ -16,8 +16,12 @@ a:hover {
     text-decoration: underline;
 }
 
+main h2{
+    inline-size: 80%;
+    margin-inline-start: 5%;
+}
 main p.intro {
-     inline-size: 80%;
+    inline-size: 80%;
     margin-inline-start: 10%;
     padding-block-start: 10px;
     padding-block-end: 5px;

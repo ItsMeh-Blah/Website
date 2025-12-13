@@ -19,7 +19,7 @@ header {
     border-block-start: solid var(--colourTwo);
     Border-block-end: solid var(--colourTwo);
     box-sizing: border-box;
-}
+    }
 
 header img {
     display: block;
@@ -32,19 +32,8 @@ header img {
 }
 
 img:first-child {
-    height: 100px;
-    width: 200px;
-}
-
-.header,
-div.header a {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    font-style: italic;
-    color: var(--colourThree);
-    text-align: right;
-    padding: 3px;
-    text-decoration: none;
+    height: 180px;
+    width: auto;
 }
 
 .nav {
@@ -75,6 +64,15 @@ li {
 
 div li:nth-child(4) {
     display: none;
+}
+.header,
+div.header a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-style: italic;
+    color: var(--colourThree);
+    text-align: right;
+    text-decoration: none;
 }
 
 main {
