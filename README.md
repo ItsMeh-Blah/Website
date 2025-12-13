@@ -1,6 +1,6 @@
 # Crochet Along
 
-Crochet Along is my Static Webpage Assignment for Web Programming I.  I was tasked with creating a business website using HTML and CSS.
+[Crochet Along](https://itsmeh-blah.github.io/Website/) is my Static Webpage Assignment for Web Programming I.  I was tasked with creating a business website using HTML and CSS.
 This assignment demonstrates my understanding of the following key concepts I learned in the course.
 
 - HTML Basics
